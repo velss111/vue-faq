@@ -1,6 +1,6 @@
 import { SearchQuery } from 'storefront-query-builder'
 
-const createSingleFAQQuery = ({ key, value }): SearchQuery => {
+const createSingleFaqQuery = ({ key, value }): SearchQuery => {
   let query = new SearchQuery()
 
   if (value) {
@@ -10,4 +10,4 @@ const createSingleFAQQuery = ({ key, value }): SearchQuery => {
   return query
 }
 
-export default createSingleFAQQuery
+export default createSingleFaqQuery

@@ -1,8 +1,8 @@
 import { MutationTree } from 'vuex'
 import * as types from './mutation-types'
-import FAQState from '../types/FAQState'
+import FaqState from '../types/FaqState'
 
-const mutations: MutationTree<FAQState> = {
+const mutations: MutationTree<FaqState> = {
   [types.FAQ_QUESTION_UPDATE_FAQ_QUESTIONS] (state, faqQuestions) {
     state.items = faqQuestions || []
   },

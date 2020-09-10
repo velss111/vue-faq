@@ -1,5 +1,5 @@
 <template>
-  <div id="faq" class="block">
+  <div class="faq block">
     <h1 class="center-xs">Frequently Asked Questions</h1>
     <div class="faq__wrapper mx10"
          v-for="question in faq"
@@ -59,13 +59,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .faq__answer {
-    transition: ease 0.2s;
-    max-height: 0;
-    overflow: hidden;
-  }
-  .active > .faq__answer {
-    transition: ease 0.2s;
-    max-height: 150px;
+  .faq{
+    &__answer{
+      transition: ease 0.2s;
+      max-height: 0;
+      overflow: hidden;
+    }
+    & .active{
+      > .faq__answer {
+        transition: ease 0.2s;
+        max-height: 150px;
+      }
+    }
   }
 </style>

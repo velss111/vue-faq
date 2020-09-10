@@ -1,7 +1,7 @@
-import createLoadingFAQQuery from './createLoadingFAQQuery'
-import createSingleFAQQuery from './createSingleFAQQuery'
+import createLoadingFaqQuery from './createLoadingFaqQuery'
+import createSingleFaqQuery from './createSingleFaqQuery'
 
 export {
-  createLoadingFAQQuery,
-  createSingleFAQQuery
+  createLoadingFaqQuery,
+  createSingleFaqQuery
 }

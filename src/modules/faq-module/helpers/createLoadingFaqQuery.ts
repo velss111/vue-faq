@@ -1,6 +1,6 @@
 import { SearchQuery } from 'storefront-query-builder'
 
-const createLoadingFAQQuery = ({ filterField, filterValues }): SearchQuery => {
+const createLoadingFaqQuery = ({ filterField, filterValues }): SearchQuery => {
   let query = new SearchQuery()
 
   if (filterValues) {
@@ -10,4 +10,4 @@ const createLoadingFAQQuery = ({ filterField, filterValues }): SearchQuery => {
   return query
 }
 
-export default createLoadingFAQQuery
+export default createLoadingFaqQuery
