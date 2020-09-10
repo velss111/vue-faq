@@ -141,6 +141,16 @@ export class SearchAdapter {
       }
     })
 
+    this.registerEntityType('faq_question', {
+      queryProcessor: (query) => {
+        // function that can modify the query each time before it's being executed
+        return query
+      },
+      resultProcessor: (resp, start, size) => {
+        return this.handleResult(resp, 'faq_question', start, size)
+      }
+    })
+
     this.registerEntityType('attribute', {
       queryProcessor: (query) => {
         // function that can modify the query each time before it's being executed
